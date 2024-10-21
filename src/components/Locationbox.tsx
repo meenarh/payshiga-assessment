@@ -73,7 +73,7 @@ export const Locationbox: React.FC<LocationboxProps> = ({ onChange }) => {
                 <CommandItem
                   key={country.value}
                   value={country.value}
-                  onchange={onChange}
+                  onChange={onChange}
                   onSelect={(currentValue: React.SetStateAction<string>) => {
                     setValue(currentValue === value ? "" : currentValue);
                     setOpen(false);

@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import loadingReducer from './loadingSlice';
+import formReducer from './formSlice'
 
 const store = configureStore({
   reducer: {
     loading: loadingReducer,
+    form: formReducer,
   },
 });
 

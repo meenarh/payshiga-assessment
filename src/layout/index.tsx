@@ -21,11 +21,14 @@ import { AddBusinessForm } from "@/components/AddBusinessForm";
 import { Button } from "@/components/ui/button";
 import { ChevronsUpDown } from 'lucide-react';
 import { MdOutlineMenu } from "react-icons/md";
+import { stat } from 'fs';
+import { Root } from 'react-dom/client';
 
 const Layout: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const dispatch: AppDispatch = useDispatch();
   const isLoading = useSelector((state: RootState) => state.loading.isLoading);
+  const businessName = useSelector((state: RootState) => state.form.businessName)
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 768);
 
@@ -55,7 +58,7 @@ const Layout: React.FC = () => {
   }, [dispatch]);
 
   if (isLoading) {
-    return <Loading businessName={'Business Name'} />;
+    return <Loading businessName={businessName || 'Business Name'} />;
   }
 
   return (
