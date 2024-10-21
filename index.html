@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payshiga</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+<script>
+    window.exports = window;
+    window.require = function(module) {
+        switch (module) {
+            case 'react':
+                return window.React;
+            case 'react-dom':
+                return window.ReactDOM;
+            case 'prop-types':
+                return window.PropTypes;
+            case 'chart.js':
+                return window.chartjs;
+            case 'lodash/isEqual':
+                return window._.isEqual;
+            case 'lodash/keyBy':
+                return window._.keyBy;
+            default:
+                return window[module];
+        }
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+<script>
+   
+    window.chartjs = window.Chart;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/prop-types@15.7.2/prop-types.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-chartjs-2@2.11.1/lib/index.js"></script>
+
+<script
+  type="text/javascript"
+  src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  </body>
+</html>

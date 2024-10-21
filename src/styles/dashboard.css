@@ -1,0 +1,292 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.navbar-top {
+  padding: 6px;
+  border: 1px solid #e2e3e5;
+  border-radius: 12px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info section {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.info h4,
+.new p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.info p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #99999c;
+}
+
+.new{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.btn{
+  color: #343433;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn:hover{
+  background-color: #FAFAFA;
+}
+
+.navbar-links {
+  margin-top: 60px;
+  width: 214px;
+  text-align: center;
+}
+
+.navbar-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 30px;
+}
+
+.navbar-links li {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.navbar-links img {
+  width: 20px;
+  height: 20px;
+  margin-top: 4.5px;
+}
+
+.navbar-links a {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #99999C;
+  margin-top: 5px;
+}
+
+.navbar-links a.active,
+.navbar-links a:active {
+  color: #5540EB;
+}
+
+.navbar-footer {
+  margin-top: 250px;
+}
+
+.navbar-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 30px;
+}
+
+.navbar-footer li {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.navbar-footer img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-footer a {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #99999C;
+}
+
+header {
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.content{
+  width: 100%;
+}
+
+
+/* sidebar toggle */
+@media (max-width: 768px) {
+  .sidebar-container.hidden {
+    display: none;
+  }
+
+  .mobile-toggle {
+    position: fixed;
+    color: black;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .navbar-links ul,
+  .navbar-footer ul {
+    margin-left: 15px;
+    gap: 20px;
+  }
+
+  .navbar-links li,
+  .navbar-footer li{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  header > section {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .test-text{
+    padding-top: 7px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard {
+    flex-direction: column;
+    max-width: 100vw;
+    overflow-x: visible;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 30px 8px 8px 8px;
+  }
+
+  .navbar-links ul,
+  .navbar-footer ul {
+    margin-left: 10px;
+    gap: 15px;
+  }
+
+  .navbar-links li,
+  .navbar-footer li {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  header > section {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .content {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .dashboard {
+    max-width: 100vw;
+  }
+
+  .sidebar {
+    padding: 5px;
+  }
+
+  .navbar-links ul,
+  .navbar-footer ul {
+    margin-left: 5px;
+    gap: 10px;
+  }
+
+  .navbar-links li,
+  .navbar-footer li {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  header > section {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .content {
+    padding: 3px;
+  }
+}

@@ -1,0 +1,539 @@
+.main-container {
+   width: 100%;
+   padding: 20px;
+ }
+ 
+ .section-divider {
+   margin: 16px 0;
+ }
+ 
+ .content-wrapper {
+   padding: 0 48px;
+ }
+ 
+ .header-section {
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0 16px;
+ }
+ 
+ .greeting-text {
+   font-family: 'Ojah Display', sans-serif;
+   font-weight: normal;
+   font-size: 32px;
+   color: #343433;
+ }
+ 
+ .date-text {
+   font-family: 'Inter', sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   color: #99999C;
+ }
+ 
+ .currency-section {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+ }
+ 
+ .currency-list {
+   display: flex;
+   gap: 12px;
+ }
+ 
+ .currency-item {
+  font-family: 'Ojah Display', sans-serif;
+   font-size: 17px;
+   font-weight: 400;
+   color: #B4B4B4;
+   padding-top: 11px;
+ }
+ 
+ .currency-item.active {
+   background-color: black;
+   color: #FFFFFF;
+   border-radius: 100px;
+   padding: 11px 16px;
+ }
+ 
+ .action-buttons {
+   display: flex;
+   gap: 16px;
+ }
+ 
+ .add-money-button {
+   background-color: #625BF6;
+   padding: 11px 16px;
+   color: white;
+   font-size: 14px;
+   border-radius: 12px;
+   font-family: 'Inter', sans-serif;
+   height: 42px;
+ }
+ 
+ .send-money-button {
+   border: 1px solid #E2E3E5;
+   padding: 11px 16px;
+   font-family: 'Inter', sans-serif;
+   color: #343433;
+   border-radius: 12px;
+   height: 42px;
+ }
+ 
+.options-button-container{
+  width: 42px;
+  height: 42px;
+}
+
+ .options-button {
+   padding: 16px;
+   border: 1px solid #E2E3E5;
+   border-radius: 8px;
+ }
+ 
+ .balance-section {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 40px;
+ }
+ 
+ .balance-info {
+   display: flex;
+   gap: 5px;
+   font-family: 'Inter', sans-serif;
+   font-size: 18px;
+   color: #99999C;
+ }
+ 
+.info-icon{
+  background-color: #99999C;
+  color: white;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  margin-top: 8px;
+}
+
+ .balance-amount,
+ .transaction-count,
+ .settlement-amount {
+   font-family: 'Inter', sans-serif;
+   font-size: 32px;
+   font-weight: 600;
+   color: #343433;
+ }
+ 
+ .balance-change {
+   display: flex;
+   gap: 4px;
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+ }
+ 
+ .balance-change.positive {
+   color: #00C46C;
+ }
+ 
+ .balance-change.negative {
+   color: #FF4E4E;
+ }
+ 
+ .toggle-wrapper {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 24px;
+ }
+ 
+ .toggle-section {
+   display: flex;
+   background-color: #FAFAFA;
+   padding: 4px;
+   border-radius: 24px;
+ }
+ 
+ .toggle-option {
+   padding: 8px 16px;
+   font-family: 'Inter', sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+   color: #B4B4B4;
+ }
+ 
+ .toggle-option.active {
+   background-color: white;
+   color: #343433;
+   border-radius: 24px;
+ }
+ 
+ .date-filter {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+   display: flex;
+   gap: 8px;
+   border: 1px solid #E2E3E5;
+   padding: 6px 6px;
+   height: 42px;
+   border-radius: 12px;
+ }
+ 
+ .chart-container {
+   width: 100%;
+ }
+ 
+ .cards-section {
+   display: flex;
+   width: 100%;
+ }
+ 
+ .card-list {
+   width: 50%;
+   margin-right: 15px;
+ }
+ 
+ .card-header,
+ .activity-header {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+ }
+
+ .card-header h3, 
+ .activity-header h3{
+  font-family: 'Ojah Display', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #343433;
+}
+
+ .see-all{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #343433;
+  display: flex;
+  gap: 3px;
+  border: 1px solid #E2E3E5;
+  padding: 6px 8px 6px 16px;
+  border-radius: 10px;
+ }
+ 
+ .card-item,
+ .activity-item {
+   display: flex;
+   justify-content: space-between;
+   padding: 12px 0;
+ }
+ 
+ .card-info {
+   display: flex;
+   gap: 8px;
+ }
+
+ .card-info p{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #343433;
+ }
+
+ .card-info span{
+  font-size: 13px;
+  color: #99999C;
+ }
+ 
+ .card-status {
+   display: flex;
+   align-items: center;
+   padding: 4px 5px;
+   height: 25px;
+   margin-top: 10px;
+   border-radius: 6px;
+ }
+ 
+ .card-status.locked {
+   color: #FF9900;
+   font-family: 'Inter', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   border: 1px solid #FFF0D9;
+ }
+ 
+ .card-status.active {
+   color: #00C46C;
+   font-family: 'Inter', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   border: 1px solid #DCFAEC;
+ }
+
+ .card-amount{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #343433;
+  margin-top: 10px;
+ }
+ 
+ .activities-section {
+   width: 50%;
+   border-left: 1px solid #f5f5f5;
+   padding-left: 10px;
+ }
+ 
+ .activity-item {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .activity-info {
+   display: flex;
+   gap: 8px;
+ }
+
+ .activity-info p{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #99999C;
+ }
+
+ .activity-info span{
+  font-size: 16px;
+  font-weight: 500;
+  color: #343433;
+ }
+ 
+ .activity-amount {
+   font-size: 16px;
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   margin-top: 10px;
+ }
+ 
+ .activity-amount.positive {
+   color: #00C46C;
+ }
+
+ .activity-amount.grey{
+  color: #99999C;
+ }
+
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 15px;
+  }
+
+  .content-wrapper {
+    padding: 0 24px;
+  }
+
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0 12px;
+  }
+
+  .greeting-text {
+    font-size: 28px;
+  }
+
+  .date-text {
+    font-size: 14px;
+  }
+
+  .currency-section {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .currency-list {
+    gap: 10px;
+  }
+
+  .action-buttons {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .add-money-button,
+  .send-money-button{
+    width: 130px;
+    height: 42px;
+  }
+
+  .balance-section {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cards-section {
+    flex-direction: column;
+  }
+
+  .card-list,
+  .activities-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .content-wrapper {
+    padding: 0 16px;
+  }
+
+  .greeting-text {
+    font-size: 24px;
+  }
+
+  .date-text {
+    font-size: 12px;
+  }
+
+  .currency-list {
+    gap: 8px;
+  }
+
+  .add-money-button,
+  .send-money-button{
+    width: 130px;
+    height: 42px;
+  }
+
+  .balance-info {
+    font-size: 16px;
+  }
+
+  .balance-amount,
+  .transaction-count,
+  .settlement-amount {
+    font-size: 20px;
+  }
+
+  .toggle-option {
+    font-size: 16px;
+  }
+
+  .card-header h3,
+  .activity-header h3 {
+    font-size: 22px;
+  }
+
+  .see-all {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .card-info p {
+    font-size: 14px;
+  }
+
+  .card-info span {
+    font-size: 12px;
+  }
+
+  .card-amount {
+    font-size: 14px;
+  }
+
+  .activity-info p {
+    font-size: 10px;
+  }
+
+  .activity-info span {
+    font-size: 14px;
+  }
+
+  .activity-amount {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-container {
+    padding: 5px;
+  }
+
+  .content-wrapper {
+    padding: 0 8px;
+  }
+
+  .greeting-text {
+    font-size: 20px;
+  }
+
+  .date-text {
+    font-size: 10px;
+  }
+
+  .currency-list {
+    gap: 6px;
+  }
+
+  .add-money-button,
+  .send-money-button{
+    width: 130px;
+    height: 42px;
+  }
+
+  .balance-info {
+    font-size: 14px;
+  }
+
+  .balance-amount,
+  .transaction-count,
+  .settlement-amount {
+    font-size: 18px;
+  }
+
+  .toggle-option {
+    font-size: 14px;
+  }
+
+  .card-header h3,
+  .activity-header h3 {
+    font-size: 20px;
+  }
+
+  .see-all {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .card-info p {
+    font-size: 12px;
+  }
+
+  .card-info span {
+    font-size: 10px;
+  }
+
+  .card-amount {
+    font-size: 12px;
+  }
+
+  .activity-info p {
+    font-size: 8px;
+  }
+
+  .activity-info span {
+    font-size: 12px;
+  }
+
+  .activity-amount {
+    font-size: 12px;
+  }
+}

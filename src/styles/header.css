@@ -1,0 +1,153 @@
+.header {
+   padding: 12px;
+ }
+ 
+.dashboard-title {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 18px; /* 18px */
+ }
+ 
+.test-text {
+   font-family: 'Ojah Display', sans-serif;
+   font-size: 16px; /* 18px */
+   margin-top: 8px;
+   font-weight: 400;
+   color: #ff4e4e;
+ }
+ 
+ .checkbox-container {
+   display: inline-flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ 
+.checkbox-input {
+   position: absolute;
+   opacity: 0;
+   width: 0;
+   height: 0;
+ }
+ 
+.checkbox-toggle {
+   position: relative;
+   width: 44px;
+   height: 24px;
+   background-color: #e5e7eb;
+   border-radius: 9999px;
+   transition: background-color 0.3s;
+   outline: none;
+ }
+ 
+ .checked {
+   background-color: #00c46c;
+ }
+ 
+ .checkbox-circle {
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   width: 20px;
+   height: 20px;
+   background-color: #ffffff;
+   border-radius: 50%;
+   border: 1px solid #d1d5db;
+   transition: transform 0.3s;
+ }
+ 
+ .checked-circle {
+   transform: translateX(20px); 
+ }
+ 
+ .separator {
+   border-left: 1px solid #e2e3e5;
+   margin-top: 8px;
+ }
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .dashboard-title {
+    font-size: 16px;
+  }
+
+  .test-text {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .checkbox-toggle {
+    width: 38px;
+    height: 20px;
+  }
+
+  .checkbox-circle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .checked-circle {
+    transform: translateX(16px);
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 8px;
+  }
+
+  .dashboard-title {
+    font-size: 14px;
+  }
+
+  .test-text {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .checkbox-toggle {
+    width: 34px;
+    height: 18px;
+  }
+
+  .checkbox-circle {
+    width: 16px;
+    height: 16px;
+  }
+
+  .checked-circle {
+    transform: translateX(14px);
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: 6px;
+  }
+
+  .dashboard-title {
+    font-size: 12px;
+  }
+
+  .test-text {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  .checkbox-toggle {
+    width: 30px;
+    height: 16px;
+  }
+
+  .checkbox-circle {
+    width: 14px;
+    height: 14px;
+  }
+
+  .checked-circle {
+    transform: translateX(12px);
+  }
+}

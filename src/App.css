@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Ojah Display';
+  src: url('./assets/fonts/OjahDisplayBlack.otf') format('opentype'),
+       url('./assets/fonts/OjahDisplayBold.otf') format('opentype'); 
+  font-weight: normal;
+  font-style: normal; 
+}
